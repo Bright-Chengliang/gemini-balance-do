@@ -268,9 +268,6 @@ export class LoadBalancer extends DurableObject {
 		const extra = req.extra_body?.google;
 
 		if (extra) {
-			if (extra.safety_settings) {
-				body.safetySettings = extra.safety_settings;
-			}
 			if (extra.cached_content) {
 				body.cachedContent = extra.cached_content;
 			}
